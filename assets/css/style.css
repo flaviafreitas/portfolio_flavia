@@ -293,6 +293,27 @@ html {
     padding: 48px 24px;
   }
 }
+.projects .project-preview {
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.projects .project-preview img {
+  width: 100%;
+  height: auto;
+  animation: scrollAnimation 10s linear infinite;
+}
+@keyframes scrollAnimation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-80%);
+  }
+}
 .projects__container {
   margin: 24px 0px;
 }
@@ -301,6 +322,9 @@ html {
   background-color: #1a1a1a;
   height: auto;
   margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .projects__container-card:hover {
   border: 1px solid #e51d37;

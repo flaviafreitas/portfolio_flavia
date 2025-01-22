@@ -3,6 +3,30 @@
     text-align: center;
     background-color: $bg-secondary;
 
+    .project-preview {
+        width: 350px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid #ddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        img {
+            width: 100%;
+            height: auto;
+            animation: scrollAnimation 10s linear infinite;
+        }
+    }
+    
+    @keyframes scrollAnimation {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-80%);
+        }
+    }
+
     &__container {
         margin: $gap-3 0px;
 
@@ -11,6 +35,9 @@
             background-color: $bg-main;
             height: auto;
             margin-top: $gap-4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;       
 
             &:hover {
                 border: 1px solid #e51d37;
