@@ -300,6 +300,7 @@ html {
   position: relative;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 .projects .project-preview img {
   width: 100%;
@@ -325,6 +326,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 25px;
 }
 .projects__container-card:hover {
   border: 1px solid #e51d37;
