@@ -1,0 +1,97 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 1.8rem;
+    color: $color-gray;
+    line-height: 160%;
+    margin: $gap-4 0px;
+}
+
+span {
+    font-size: 1.8rem;
+    color: $color-main;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+a {
+    font-size: 2rem;
+    font-weight: 400;
+    color: $color-main;
+}
+
+h1 {
+    color: $color-white;
+    font-size: 4rem;
+    font-weight: 500;
+
+    @include tablet {
+      font-size: 3.4rem;
+    }
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: $color-white;
+
+    @include tablet {
+        font-size: 2.6rem;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: $color-white;
+
+    @include tablet {
+        font-size: 1.8rem;
+    }
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $color-gray;
+}
+
+h5 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $color-white;
+}
+
+h6 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $color-white;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.swiper-pagination {
+    position: inherit;
+    margin-top: $gap-3;
+}
+
+.swiper-pagination-bullet {
+    background-color:$color-gray;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 0.6;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: $color-main;
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+  }
+  

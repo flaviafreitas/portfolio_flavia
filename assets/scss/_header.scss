@@ -1,0 +1,14 @@
+.header {
+    padding: 10px 50px;
+    background: $bg-secondary;
+    border-bottom: 1px solid $bg-border;
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    @include tablet() {
+        padding: 0px $gap-3;
+    }
+}

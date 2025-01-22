@@ -1,0 +1,41 @@
+.projects {
+    @include padding-section;
+    text-align: center;
+    background-color: $bg-secondary;
+
+    &__container {
+        margin: $gap-3 0px;
+
+        &-card {
+            border: 1px solid #e51d37;
+            background-color: $bg-main;
+            height: auto;
+            margin-top: $gap-4;
+
+            &:hover {
+                border: 1px solid #e51d37;
+            }
+
+            a {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 1px;
+                    bottom: -7px;
+                    left: 0;
+                    transform-origin: bottom right;
+                    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+    }
+}

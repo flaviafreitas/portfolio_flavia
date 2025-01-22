@@ -1,0 +1,32 @@
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: $bg-secondary;
+    color: $color-white;
+    padding: $gap-3 0px;
+    border-top: 1px solid $bg-border;
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    p {
+        margin: $gap-0;
+        a {
+            font-weight: 500;
+            color: $color-main;
+        }
+    }
+
+    @include desktop {
+        .center {
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: $gap-1;
+        }
+    }
+}

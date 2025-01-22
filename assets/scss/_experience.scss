@@ -1,0 +1,69 @@
+.experience {
+    background-color: $bg-secondary;
+    color: $color-white;
+    @include padding-section;
+
+    &__container {
+        margin-top: $gap-4;
+        display: flex;
+        gap: 40px;
+
+        @include desktop {
+            flex-wrap: wrap;
+        }
+
+        &-option {
+            display: flex;
+            width: 25%;
+            flex-direction: column;
+
+            @include desktop {
+                width: 100%;
+            }
+
+            div {
+                padding: $gap-4;
+                text-align: left;
+                border-left: 4px solid $bg-main;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                @include mobile {
+                    padding: $gap-3;
+                }
+            }
+
+            .activeExperience {
+                border-left: 4px solid $color-main;
+                color: $color-main;
+
+                h3 {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        &-text {
+            width: 75%;
+            opacity: 1;
+            transition: opacity 0.4s ease-in-out;
+
+            @include desktop {
+                width: 100%;
+            }
+
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                @include desktop {
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}
