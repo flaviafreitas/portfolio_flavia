@@ -79,6 +79,10 @@ h6 {
     overflow: hidden;
 }
 
+.swiper-wrapper {
+    transition-timing-function: linear;
+}
+
 .swiper-pagination {
     position: inherit;
     margin-top: $gap-3;

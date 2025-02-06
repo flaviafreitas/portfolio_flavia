@@ -2,10 +2,6 @@
     padding: $gap-8 $gap-0;
     background-color: $bg-main;
 
-    .swiper-wrapper {
-        transition-timing-function: linear!important;
-    }
-
     &__container {
         margin-top: $gap-4;
         overflow: hidden;
@@ -13,6 +9,7 @@
         width: 100%;
 
         &-card {
+            margin-top: $gap-4;
             display: flex;
             justify-content: center;
             align-items: center;
