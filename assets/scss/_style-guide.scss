@@ -75,6 +75,10 @@ h6 {
     opacity: 0;
 }
 
+.swiper-container {
+    overflow: hidden;
+}
+
 .swiper-pagination {
     position: inherit;
     margin-top: $gap-3;

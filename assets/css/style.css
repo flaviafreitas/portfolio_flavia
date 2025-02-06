@@ -238,51 +238,39 @@ html {
   padding: 96px 0px;
   background-color: #1a1a1a;
 }
+.skills .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
 .skills__container {
   margin-top: 32px;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
-.skills__container-cards {
-  display: flex;
-  gap: 24px;
-  animation: scroll-carousel 20s linear infinite;
-  margin-top: 48px;
-}
-.skills__container-cards div {
+.skills__container-card {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 130px;
-  width: 130px;
   background-color: #000000;
   position: relative;
   border: 1px solid #1f1f1f;
   border-radius: 4px;
   transition: 1s all ease;
 }
-.skills__container-cards div:hover {
+.skills__container-card:hover {
   border: 1px solid #cd2d3f;
 }
-.skills__container-cards div img {
+.skills__container-card img {
   max-width: 55px;
   max-height: 55px;
 }
 @media screen and (max-width: 768px) {
-  .skills__container-cards div {
+  .skills__container-card {
     width: 40%;
   }
 }
 
-@keyframes scroll-carousel {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 .projects {
   padding: 96px 48px;
   text-align: center;
@@ -457,6 +445,10 @@ h6 {
 
 .hidden {
   opacity: 0;
+}
+
+.swiper-container {
+  overflow: hidden;
 }
 
 .swiper-pagination {
