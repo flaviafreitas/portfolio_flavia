@@ -269,10 +269,11 @@ html {
   position: relative;
   border: 1px solid #1f1f1f;
   border-radius: 4px;
-  transition: 1s all ease;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 .skills__container-card:hover {
   border: 1px solid #cd2d3f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .skills__container-card img {
   max-width: 55px;
