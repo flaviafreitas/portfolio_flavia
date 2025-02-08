@@ -1,13 +1,13 @@
-
 html {
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 p {
     font-size: 1.8rem;
     color: $color-gray;
     line-height: 160%;
-    margin: $gap-4 0px;
+    margin: $gap-2 0px;
 }
 
 span {

@@ -1,15 +1,23 @@
 .skills {
     padding: $gap-8 $gap-0;
     background-color: $bg-main;
+    @include padding-section;
 
     &__container {
         margin-top: $gap-4;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr repeat(7, 1fr);
+        gap: 20px;
+
+        @include tablet {
+            grid-template-columns: 1fr repeat(3, 1fr);
+        }
+
+        @include mobile {
+            grid-template-columns: 1fr 1fr;
+        }
 
         &-card {
-            margin-top: $gap-4;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -28,10 +36,6 @@
                 max-width: 55px;
                 max-height: 55px;
 
-            }
-
-            @include mobile {
-                width: 40%;
             }
         }
     }

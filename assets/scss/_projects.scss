@@ -4,13 +4,14 @@
     background-color: $bg-secondary;
 
     .project-preview {
-        width: 350px;
+        width: 300px;
         height: 200px;
         overflow: hidden;
         position: relative;
-        border: 1px solid #ddd;
+        border: 1px solid $bg-border;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin-top: 20px;
+        border-radius: 4px;
 
         img {
             width: 100%;
@@ -32,17 +33,19 @@
         margin: $gap-3 0px;
 
         &-card {
-            border: 1px solid #e51d37;
+            border: 1px solid $color-main;
             background-color: $bg-main;
+            border-radius: 8px;
             height: auto;
             margin-top: $gap-4;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 25px;     
+            padding: 25px;
+            transition: border 0.3s ease-in-out;
 
             &:hover {
-                border: 1px solid #e51d37;
+                border: 1px solid $color-gray;
             }
 
             a {

@@ -8,28 +8,14 @@ export function initSwiper() {
             clickable: true,
             type: 'bullets',
         },
-        "breakpoints": {
-            768: { slidesPerView: 1, spaceBetween: 10 },
-            992: { slidesPerView: 2, spaceBetween: 20 },
-            1200: { slidesPerView: 3, spaceBetween: 30 },
-        },
-    });
-
-    const swiperSkills = new Swiper('.swiper-skills', { 
-        loop: true,
-        "spaceBetween": 20,
-        "slidesPerView": 'auto',
-        "speed": 2000,
-        "watchOverflow": true,
+        "speed": 10000,
         "autoplay": {
             "delay": 0,
-            "disableOnInteraction": false,
-            "pauseOnMouseEnter": true
         },
         "breakpoints": {
-            768: { slidesPerView: 2 },
-            992: { slidesPerView: 3 },
-            1200: { slidesPerView: 4 },
+            700: { slidesPerView: 1.8, spaceBetween: 10 },
+            992: { slidesPerView: 2.3, spaceBetween: 20 },
+            1200: { slidesPerView: 3, spaceBetween: 30 },
         },
     });
 }
