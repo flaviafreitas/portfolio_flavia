@@ -5,6 +5,6 @@ export function textWrite(elemento) {
     textoArray.forEach((letra, i) => {
         setTimeout(() => {
             elemento.textContent += letra;
-        }, 70 * i);
+        }, 50 * i);
     });
 }
